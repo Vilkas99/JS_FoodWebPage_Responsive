@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="overlay" id="overlay">
+        <h3>Cargando...</h3>
+    </div>
+
+
+    <div class="hero-bg">        
+        <section class="top">
+            <header>
+                <a href="#">Golosina sabrosa</a>
+            </header>
+
+            <h1><span> Una Experiencia </span> Saludable</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae obcaecati est itaque. Dolorem, corrupti! Totam modi assumenda quaerat similique adipisci labore non placeat qui omnis, quam pariatur vero sunt!</p>
+
+             <div class="contenedor-forma">
+                 <form action="">
+                     <div class="forma-izq">
+                        <label for="ciudad">Ingresa tu ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad">
+                        <p>Ejemplo: Monterrey</p>
+                    </div>
+                    <input type="button" value="Encuentra comida ahora!" id="cta-btn">
+
+                 </form>
+             </div>
+        </section>
+    </div>
+
+    <section class="cuerpo">
+        <div class="columna-der">
+            <h2>VERDADERAMENTE ASOMBROSO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium enim ab debitis similique cum molestias quidem error! Quidem inventore mollitia ipsum eaque, error fugiat quisquam quasi ratione, ut minima molestiae.</p>
+        </div>
+        <img src="images/tofu.jfif" alt="Imagen de un platillo de tofu">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn')
+        let overlay = document.getElementById('overlay')
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+        })
+    </script>
+
+</body>
+</html>
